@@ -13,4 +13,4 @@ function dataHandling(input) {
         console.log('Hobi:  ' + input[i][4] + '\n');
     }
 }
-console.log(dataHandling(input))
+console.log(dataHandling(input)) 
