@@ -3,7 +3,7 @@ function hitungJumlahKata(kalimat) {
     var ubahArray = kalimat.split(" ");
     //hitung isi dari array
     return ubahArray.length ;
-  }
+}
   
   // TEST CASES
   console.log(hitungJumlahKata('I have a dream')); // 4
