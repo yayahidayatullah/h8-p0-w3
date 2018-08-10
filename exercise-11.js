@@ -6,13 +6,13 @@ function tentukanDeretAritmatika(arr) {
     }
     for(var j = 0 ; j < hasilBagi.length-1 ;j++){
         if(hasilBagi[j]  !== hasilBagi[j+1]){
-            hasilFalse += 1
+            hasilFalse += 1;
         }
     }
     if(hasilFalse === 0){
-        return true
+        return true;
     }else{
-        return false
+        return false;
     }
   }
   
