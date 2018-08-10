@@ -1,6 +1,6 @@
 function tentukanDeretAritmatika(arr) {
-    hasilBagi =[];
-    hasilFalse = 0;
+    var hasilBagi =[];
+    var hasilFalse = 0;
     for(var i = 0 ; i < arr.length-1 ; i++) {
         hasilBagi.push(arr[i+1]-arr[i]);
     }
