@@ -1,4 +1,24 @@
 function groupAnimals(animals) {
+    //"LOOPING PERTAMA"
+    //untuk mengelompokkan huruf depan yang sama(yang urutannya benar)
+    //ditampung kedalam urut animals
+    var urutAnimals2 = [];
+    var penampung = [];
+    for(var k = 0 ; k < animals.length ;k++){
+        
+        for(var l = k+1; l < animals.length; l++){
+        if(animals[k][0] === animals[l][0]){
+            penampung.push(animals[k]);
+            penampung.push(animals[l]);
+            urutAnimals2.push(penampung);
+            penampung =[];
+            }
+        }
+        
+    }
+    urutAnimals2.sort()
+    //"LOOPING KEDUA"
+    //untuk mengurutkan dan menampung hasil(tapi hasil urutannya masih salah)
     var urutAnimals = animals.sort();
     var hasil = [];//menampung hasil
     var group = [];//untuk menampung grup dengan awal huruf sama
@@ -15,8 +35,15 @@ function groupAnimals(animals) {
         }
     }
     hasil.push(group);
-            hasil[0].push(hasil[0][0]);
-            hasil[0].shift(hasil[0]);
+    //"LOOPING KETIGA"
+    //looping untuk mengganti hasil yang salah dari looping ke-2 digantikan hasil dari looping pertama 
+    var pertambahan = 0;
+    for(var m = 0; m < hasil.length ; m++){
+        if(hasil[m].length === 2){
+            hasil.splice(m,1,urutAnimals2[pertambahan])
+            pertambahan+= 1;
+        }
+    }
     
     return hasil
   }
