@@ -1,6 +1,5 @@
 function groupAnimals(animals) {
     var urutAnimals = animals.sort();
-    console.log(urutAnimals)
     var hasil = [];//menampung hasil
     var group = [];//untuk menampung grup dengan awal huruf sama
     var abcd  = urutAnimals[0][0];//huf pertama
