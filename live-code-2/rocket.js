@@ -48,7 +48,7 @@ function groupOddEven(students) {
     }else if(ganjil.length > 0 && genap.length > 0){
       return "ODDS: " + ganjil + " EVENS: " + genap
     }else if(ganjil.length == 0 && genap.length == 0){
-      return " "
+      return ""
     }
 
   
